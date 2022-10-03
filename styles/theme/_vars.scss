@@ -1,0 +1,158 @@
+@import '../breakPoints';
+
+:root {
+    --container-width: 340px;
+    --container-padding: 1.25rem;
+
+    --opacity: 1;
+    --opacity-primary: 1;
+    --opacity-secondary: 1;
+    --opacity-tertiary: 1;
+
+    /* BRAND */
+    // --primary: rgb(21, 82, 43);
+    --primary: #3A5265;
+    //--secondary: rgb(136, 183, 120);
+    --secondary: #8CABC0;
+    //--tertiary: rgb(38, 164, 255);
+    --tertiary: #2B90C6;
+
+    /* ACCENTS */
+    --yellow: #FFB836;
+    --green: #56CDAD;
+    --red: #FF6550;
+    --blue: #26A4FF;
+    --dark: #000000;
+    // --dark: #202430;
+
+    /* NEUTRALS */
+    --neutral100: #000000;
+    --neutral80: #3A5265;
+    --neutral60: #2B90C6;
+    --neutral50: #8CABC0;
+    --neutral30: #D8E0E5;
+    --neutral20: #EFEFEF;
+    --neutral10: #FAFAFA;
+    --neutral0: #FFFFF0;
+
+    // Shadows
+    --inactive-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.03)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06));
+    --hover-shadow: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.05));
+
+    // Border Radius
+    --radio-xs: 3px;
+    --radio-s: 8px;
+    --radio-m: 16px;
+    --radio-l: 32px;
+    --radio-xl: 60px;
+    --radio-xxl: 100px;
+    --radio-circle: 999px;
+
+    // Spacing
+    --spc-xxxs: 6px;
+    --spc-xxs: 14px;
+    --spc-xs: 22px;
+    --spc-s: 30px;
+    --spc-m: 38px;
+    --spc-l: 44px;
+    --spc-xl: 52px;
+    --spc-xxl: 60px;
+    --spc-xxxl: 62px;
+    --spc-4xl: 86px;
+    --spc-5xl: 118px;
+    --spc-6xl: 216px;
+
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Epilogue', sans-serif;
+
+    --font-size-base: 1.4rem;
+    --font-size-large: 1.6rem;
+    --font-size-small: 1.2rem;
+
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h3: 1.8rem;
+    --font-size-h4: 1.6rem;
+    --font-size-h5: var(--font-size-base);
+    --font-size-h6: 1.2rem;
+
+
+    @media (min-width: $small-viewport) {
+        --container-width: 520px;
+        --container-padding: 0;
+        --spc-xxxs: 8px;
+        --spc-xxs: 16px;
+        --spc-xs: 24px;
+        --spc-s: 32px;
+        --spc-m: 40px;
+        --spc-l: 48px;
+        --spc-xl: 56px;
+        --spc-xxl: 64px;
+        --spc-xxxl: 72px;
+        --spc-4xl: 96px;
+        --spc-5xl: 128px;
+        --spc-6xl: 256px;
+    }
+
+    @media (min-width: $medium-viewport) {
+        --container-width: 745px;
+    }
+
+    @media (min-width: $large-viewport) {
+        --container-width: 920px;
+    }
+
+    @media (min-width: $xlarge-viewport) {
+        --container-width: 1140px;
+    }
+}
+
+$spacers: (
+    0: 0,
+    xxxs: var(--spc-xxxs),
+    xxs: var(--spc-xxs),
+    xs: var(--spc-xs),
+    s: var(--spc-s),
+    m: var(--spc-m),
+    l: var(--spc-l),
+    xl: var(--spc-xl),
+    xxl: var(--spc-xxl),
+    xxxl: var(--spc-xxxl),
+    4xl: var(--spc-4xl),
+    5xl: var(--spc-5xl),
+    6xl: var(--spc-6xl),
+);
+
+$breakpoints: (
+    xs,
+    sm,
+    md,
+    lg,
+    xl,
+    xxl
+);
+
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+$gutters: $spacers;
+
+$container-padding-x: var(--container-padding);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);

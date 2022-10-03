@@ -1,0 +1,43 @@
+$colors: (
+    primary: var(--primary),
+    secondary: var(--secondary),
+    tertiary: var(--tertiary),
+    yellow: var(--yellow),
+    green: var(--green),
+    red: var(--red),
+    blue: var(--blue),
+    purple: var(--purple),
+    neutral100: var(--neutral100),
+    neutral80: var(--neutral80),
+    neutral60: var(--neutral60),
+    neutral40: var(--neutral40),
+    neutral20: var(--neutral20),
+    neutral10: var(--neutral10),
+    neutral0: var(--neutral0),
+    dark: var(--dark),
+);
+
+@each $colorName,
+$color in $colors {
+    .color--#{$colorName} {
+        color: $color;
+    }
+
+    .bg--#{$colorName} {
+        background-color: $color;
+    }
+}
+
+.shadow {
+    filter: var(--inactive-shadow);
+
+    &:hover {
+        filter: var(--hover-shadow);
+    }
+
+    &--no_hover {
+        &:hover {
+            filter: none;
+        }
+    }
+}
