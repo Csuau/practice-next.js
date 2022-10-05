@@ -1,15 +1,15 @@
 @import 'normalize';
-//@import 'pages/base';
+
 @import "theme/vars";
 
 @import 'helpers';
 @import 'typography';
 @import 'colors';
-//@import 'spacing';
+@import 'spacing';
 @import 'container';
 @import 'display';
 @import 'img';
 
-//@import 'components/btns';
-//@import 'modules/header';
-//@import 'modules/footer';
+@import 'components/btns';
+@import 'modules/header';
+@import 'modules/footer';

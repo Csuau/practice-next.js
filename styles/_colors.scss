@@ -19,11 +19,11 @@ $colors: (
 
 @each $colorName,
 $color in $colors {
-    .color--#{$colorName} {
+    .color-#{$colorName} {
         color: $color;
     }
 
-    .bg--#{$colorName} {
+    .bg-#{$colorName} {
         background-color: $color;
     }
 }
