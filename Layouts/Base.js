@@ -3,6 +3,7 @@ import React from "react";
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import MainHero from "../components/MainHero";
 
 const Base = ({PageMetasI18n = []}) => {
     return (
@@ -25,7 +26,7 @@ const Base = ({PageMetasI18n = []}) => {
             <Header/>
 
             <main>
-
+                <MainHero/>
             </main>
             <Footer/>
         </>
