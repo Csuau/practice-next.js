@@ -9,7 +9,7 @@ const Header = () => {
     const [menu, setMenu] = useState(false)
 
     const handleMenu = useCallback(() => {
-        console.log('hola')
+
         //document.body.classList.toggle('no-scroll')
         setMenu((menu) => !menu)
     }, [menu])
@@ -33,7 +33,7 @@ const Header = () => {
                         </a>
                     </Link>
                 </div>
-                <nav className="menu  bg-primary ">
+                <nav className="menu  bg-neutral100 ">
                     <Menu extraclass="d-flex justify-content-end"/>
                 </nav>
                 <div className="d-flex justify-content-end align-items-center menu-burger">
@@ -50,7 +50,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className={`header--mobile bg-primary  ${menu ? 'active' : ''}`}>
+            <div className={`header--mobile bg-neutral100  ${menu ? 'active' : ''}`}>
                                         <span className={`close-icon  ${menu ? 'active' : ''}`} onClick={handleMenu}>
                             <svg width="30" height="30"
                                  viewBox="0 0 24 24"
