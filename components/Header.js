@@ -19,9 +19,8 @@ const Header = () => {
             <div className="container d-flex justify-content-between align-items-start">
                 <div>
                     <Link href="/">
-                        <a title="logo">
+                        <a className="header--logo" title="logo">
                             <Media
-                                extraClass="img--contain"
                                 loading="eager"
                                 relativePath="/images/logo.png"
                                 alt="logo"
