@@ -43,7 +43,7 @@ $headings: (
 $ize in $headings {
   .heading--#{$heading} {
     font-family: var(--font-primary);
-    font-size: #{$ize * .80}px;
+    font-size: #{$ize * .60}px;
     font-weight: 400;
     color: var(--neutral100);
 
@@ -55,7 +55,7 @@ $ize in $headings {
       font-size: #{$ize * .95}px;
     }
 
-    @media (min-width: $medium-viewport) {
+    @media (min-width: $large-viewport) {
       font-size: #{$ize}px;
     }
   }
