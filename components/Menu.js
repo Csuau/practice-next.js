@@ -25,11 +25,11 @@ const routes = [
         label: 'Contactar'
     },
     {
-        path: 'https://cloud.diconsal.es/index.php/login',
+        path: '#',
         label: 'Área cliente'
     },
     {
-        path: 'https://cloudrm.diconsal.es/index.php/login',
+        path: '#',
         label: 'Reconocimiento Médico'
     },
 ]
