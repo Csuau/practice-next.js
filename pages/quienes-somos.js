@@ -1,5 +1,5 @@
 import Base from '../Layouts/Base'
-export default function Home () {
+export default function AboutUs() {
     return (
         <Base />
 
