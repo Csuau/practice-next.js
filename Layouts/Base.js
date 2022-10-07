@@ -4,6 +4,7 @@ import React from "react";
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MainHero from "../components/MainHero";
+import CardInfo from "../components/CardInfo";
 
 const Base = ({PageMetasI18n = []}) => {
     return (
@@ -27,6 +28,13 @@ const Base = ({PageMetasI18n = []}) => {
 
             <main>
                 <MainHero/>
+                <section>
+                    <div className="container grid gap-xs">
+                        <CardInfo/>
+                        <CardInfo/>
+                        <CardInfo/>
+                    </div>
+                </section>
             </main>
             <Footer/>
         </>
