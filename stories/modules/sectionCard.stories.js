@@ -1,4 +1,4 @@
-import CardInfo from "../../components/CardInfo";
+import CardInfo from '../../components/CardInfo';
 
 export default {
     title: "Modules/sectionCard",

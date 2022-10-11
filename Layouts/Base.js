@@ -6,6 +6,9 @@ import Footer from '../components/Footer'
 import MainHero from "../components/MainHero";
 import CardInfo from "../components/CardInfo";
 
+
+const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
+
 const Base = ({PageMetasI18n = []}) => {
     return (
         <>
@@ -48,8 +51,15 @@ const Base = ({PageMetasI18n = []}) => {
                                   img="/images/formacion.png"
                                   color="primary"
                         />
+
                     </div>
                 </section>
+                <section className=" py-xxl">
+                    <div className="container">
+                        <Visor360/>
+                    </div>
+                </section>
+
             </main>
             <Footer/>
         </>
