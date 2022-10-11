@@ -7,7 +7,7 @@ import MainHero from "../components/MainHero";
 import CardInfo from "../components/CardInfo";
 
 
-const Tags = React.lazy(() => import(/* webpackChunkName: "component---src-Tags-js" */ '../components/Tags'))
+const Tags = React.lazy(() => import(/* webpackChunkName: "component---src-Tags-js" */ '../components/Tabs'))
 const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
 
 const Base = ({PageMetasI18n = []}) => {
@@ -62,7 +62,7 @@ const Base = ({PageMetasI18n = []}) => {
                 </section>
                 <section>
                     <div className="container">
-                        <Tags/>
+                        <Tabs/>
                     </div>
 
                 </section>

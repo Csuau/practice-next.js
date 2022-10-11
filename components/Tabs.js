@@ -1,7 +1,7 @@
 import {useState} from "react";
-import * as styles from './../styles/components/_tags.module.scss'
+import * as styles from '../styles/components/_tabs.module.scss'
 
-const Tags = () => {
+const Tabs = () => {
     console.log("hoLA")
     const [activeIndex, setActiveIndex] = useState(1);
     const handleClick = (index) => setActiveIndex(index);
@@ -32,9 +32,9 @@ const Tags = () => {
                     <p>Nulla lobortis quis massa quis lobortis. Nullam porta semper lorem, vel efficitur augue rutrum
                         quis. Suspendisse potenti.</p>
                 </div>
-              
+
             </div>
         </>
     )
 }
-export default Tags;
+export default Tabs;
