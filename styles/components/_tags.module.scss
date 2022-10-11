@@ -1,0 +1,28 @@
+.tabs {
+  display: flex;
+}
+
+.tab {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--neutral50);
+  padding: 2em 0;
+  border: none;
+
+
+  &.active {
+    background: #FAFAFA;
+    font-weight: bold;
+  }
+}
+
+.panel {
+  display: none;
+  background-color: #eaeaea;
+  padding: 10px;
+
+  &.active {
+    display: block;
+  }
+}
