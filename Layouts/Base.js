@@ -4,6 +4,10 @@ import React from "react";
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MainHero from "../components/MainHero";
+import CardInfo from "../components/CardInfo";
+
+
+const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
 
 const Base = ({PageMetasI18n = []}) => {
     return (
@@ -27,6 +31,35 @@ const Base = ({PageMetasI18n = []}) => {
 
             <main>
                 <MainHero/>
+                <section className=" py-xxl">
+                    <div className="container grid gap-xs ">
+                        <CardInfo title="Prevención Riesgos Laborales"
+                                  resum="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                  link="/riesgos-laborales"
+                                  img="/images/riesgos-laborales.png"
+                                  color="secondary"
+                        />
+                        <CardInfo title="Medicina del trabajo"
+                                  resum="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                  link="medicina-trabajo"
+                                  img="/images/medicina-trabajo.png"
+                                  color="tertiary"
+                        />
+                        <CardInfo title="Formación"
+                                  resum="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                  link="formacion"
+                                  img="/images/formacion.png"
+                                  color="primary"
+                        />
+
+                    </div>
+                </section>
+                <section className=" py-xxl">
+                    <div className="container">
+                        <Visor360/>
+                    </div>
+                </section>
+
             </main>
             <Footer/>
         </>
