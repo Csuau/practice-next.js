@@ -21,10 +21,10 @@
     &--#{$colorName} {
       background-color: $color;
       border-color: $color;
-      color: var(--neutral0);
+      color: var(--neutral20);
 
       &:hover {
-        background-color: var(--neutral0);
+        background-color: var(--neutral20);
         color: $color
       }
     }
@@ -32,13 +32,13 @@
 
   @each $colorName, $color in $colors {
     &--#{$colorName}_outline {
-      background-color: var(--neutral0);
+      background-color: var(--neutral20);
       border-color: $color;
       color: $color;
 
       &:hover {
         background-color: $color;
-        color: var(--neutral0);
+        color: var(--neutral20);
       }
     }
   }
