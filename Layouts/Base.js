@@ -2,11 +2,11 @@ import Head from 'next/head'
 import React from "react";
 
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import MainHero from "../components/MainHero";
 import CardInfo from "../components/CardInfo";
+import Footer from "../components/Footer";
 
-
+const Tabs = React.lazy(() => import(/* webpackChunkName: "component---src-Tabs-js" */ '../components/Tabs'))
 const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
 
 const Base = ({PageMetasI18n = []}) => {
@@ -59,11 +59,18 @@ const Base = ({PageMetasI18n = []}) => {
                         <Visor360/>
                     </div>
                 </section>
+                <section className=" py-xxl">
+                    <div className="container py-xxl ">
+                        <Tabs/>
+                    </div>
+
+                </section>
 
             </main>
+
             <Footer/>
         </>
     )
 }
 
-export default React.memo(Base)
+export default Base
