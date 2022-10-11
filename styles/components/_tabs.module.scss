@@ -1,26 +1,29 @@
-.tabs {
-  display: flex;
-}
+@import './../breakPoints';
 
 .tab {
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background: var(--neutral50);
-  padding: 2em 0;
+  background: var(--neutral20);
   border: none;
 
 
   &.active {
-    background: #FAFAFA;
-    font-weight: bold;
+    background: var(--secondary);
+
+    color: var(--neutral20)
   }
 }
 
 .panel {
   display: none;
-  background-color: #eaeaea;
-  padding: 10px;
+  background-color: var(--neutral10);
+
+  &--content {
+    @media(max-width: $small-viewport) {
+      display: block;
+      margin-bottom: var(--spc-xs);
+    }
+  }
 
   &.active {
     display: block;

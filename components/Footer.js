@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Media = React.lazy(() => /*webpackChunkName: "component---src-Media-js" */ import('./Media'));
+const Media = React.lazy(() => /*webpackChunkName: "component---src-Media-js" */ import('./Media'))
 
 const Footer = () => {
     return (
