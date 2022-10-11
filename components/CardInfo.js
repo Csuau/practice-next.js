@@ -5,18 +5,24 @@ import Media from "./Media";
 const CardInfo = ({title, resum, link, img, color}) => {
     return (
         <article className="shadow card">
-            <header className={`bg-${color} d-flex f-direction-row align-items-center p-xxs gap-xs card--header`}
-
-            >
-                <Media
-                    loading="lazy"
-                    relativePath={img}
-                    alt="logo"
-                    title="logo centro médico"
-                    name="logo centro médico"
-                    height="70px"
-                    width="70px"
-                />
+            <header className={`bg-${color} d-flex f-direction-row align-items-center p-xxs gap-xs card--header`}>
+                <div className="d-flex" style={{
+                    height: '70px',
+                    width: '70px',
+                    position: 'relative'
+                }}>
+                    <Media
+                        loading="lazy"
+                        relativePath={img}
+                        alt="logo"
+                        title="logo"
+                        name="logo"
+                        layout="fill"
+                        objectFit="contain"
+                        /*                    height="70px"
+                                            width="70px"*/
+                    />
+                </div>
                 <h2 className="heading--5 color-neutral10">{title}</h2>
             </header>
             <div className="bg-neutral20 p-xs card--body">

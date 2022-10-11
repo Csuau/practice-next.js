@@ -1,7 +1,7 @@
 import * as styles from './../styles/components/_visor360.module.scss'
 
 const Visor360 = () => {
-    console.log(styles)
+ 
     return (
         <div className={styles['embed-container']}>
             <iframe
