@@ -51,7 +51,18 @@
 
   &--textarea {
     height: auto;
+    padding-top: var(--spc-xxs);
 
+  }
+
+  &--error {
+    .form--input {
+      border-color: var(--red);
+    }
+
+    .form--label {
+      color: var(--red);
+    }
   }
 
 }
