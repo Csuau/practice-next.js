@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Media from "./Media";
 
-const Media = React.lazy(() => /*webpackChunkName: "component---src-Media-js" */ import('./Media'))
 
 const Footer = () => {
     return (
@@ -9,19 +9,20 @@ const Footer = () => {
             <footer className="footer p-s bg-neutral100">
                 <section className="container d-flex justify-content-between align-items-end footer--section">
                     <div>
-                        <Link href="/">
-                            <a title="logo" className="img--round d-inline footer--logo">
-                                <Media
-                                    loading="lazy"
-                                    relativePath="/images/logo.png"
-                                    alt="logo"
-                                    title="logo centro médico"
-                                    name="logo centro médico"
-                                    layout="fill"
-                                    objectFit="cover"
-                                />
-                            </a>
-                        </Link>
+
+                        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                        <a href="/" title="logo" className="img--round d-inline footer--logo">
+                            <Media
+                                loading="lazy"
+                                relativePath="/images/logo.png"
+                                alt="logo"
+                                title="logo centro médico"
+                                name="logo centro médico"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </a>
+
                         <p className="body--medium color-neutral0 mt-xs">Centro Médico ©2022</p>
                     </div>
                     <div>

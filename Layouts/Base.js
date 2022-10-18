@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import MainHero from "../components/MainHero";
 import CardInfo from "../components/CardInfo";
 import Footer from "../components/Footer";
+import FormContact from "../components/FormContact";
 
 const Tabs = React.lazy(() => import(/* webpackChunkName: "component---src-Tabs-js" */ '../components/Tabs'))
 const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
@@ -63,8 +64,10 @@ const Base = ({PageMetasI18n = []}) => {
                     <div className="container py-xxl ">
                         <Tabs/>
                     </div>
-
                 </section>
+
+                <FormContact/>
+
 
             </main>
 
