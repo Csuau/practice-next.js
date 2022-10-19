@@ -4,21 +4,18 @@ import React from "react";
 import Header from '../components/Header'
 import Footer from "../components/Footer";
 
-const Base = ({PageMetasI18n = [], children}) => {
+const Base = ({PageMetasI18n, children}) => {
     return (
         <>
-            {
-                PageMetasI18n.length > 0 && (
-                    <Head>
-                        <title>{PageMetasI18n[0].meta_title}</title>
-                        <meta name="description" content={PageMetasI18n[0].meta_description}/>
-                        <link rel="icon" href="/favicon.ico"/>
-                        <meta name="viewport" content="width=device-width"/>
-                        <meta name="robots" content={PageMetasI18n[0].meta_robots}/>
-                    </Head>
 
-                )
-            }
+            <Head>
+                <title>{PageMetasI18n?.meta_title}</title>
+                <meta name="description" content={PageMetasI18n?.meta_description}/>
+                <link rel="icon" href="/favicon.ico"/>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="robots" content={PageMetasI18n?.meta_robots}/>
+            </Head>
+
 
             <Header/>
 
