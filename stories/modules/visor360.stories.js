@@ -5,10 +5,5 @@ export default {
     component: Visor360,
 }
 export const Default = () => (
-
-    <section className=" py-xxl">
-        <div className="container">
-            <Visor360/>
-        </div>
-    </section>
+    <Visor360/>
 )

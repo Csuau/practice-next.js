@@ -24,14 +24,7 @@ const routes = [
         path: '/contacto',
         label: 'Contactar'
     },
-    {
-        path: '#',
-        label: 'Área cliente'
-    },
-    {
-        path: '#',
-        label: 'Reconocimiento Médico'
-    },
+ 
 ]
 
 
