@@ -6,9 +6,15 @@ import Table from "../components/Table";
 import {fakeBody, fakeHead} from "../data/fakeTable";
 import {fakeText} from "../data/fakeText";
 
+const PageMetasI18n = {
+    meta_title: 'Centro Médico - Formación',
+    meta_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    meta_robots: 'index,follow'
+}
+
 const Formation = () => {
     return (
-        <Base>
+        <Base PageMetasI18n={PageMetasI18n}>
             <MainHero/>
             <BasicContent title='Formación' text={fakeText}/>
             <Table head={fakeHead} body={fakeBody}/>
