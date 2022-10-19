@@ -1,9 +1,15 @@
 import * as styles from '../styles/components/_formContact.module.scss'
 import {useForm} from "react-hook-form";
+import {useEffect} from "react";
 
 const FormContact = () => {
-    const {register, handleSubmit, watch, formState: {errors}} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
     const onSubmit = data => console.log(data);
+
+    useEffect(() => {
+        console.log(errors)
+    }, [errors])
+
     return (
         <section className={`container ${styles.form} `}>
             <div className="py-xxl">
