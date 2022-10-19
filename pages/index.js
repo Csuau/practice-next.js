@@ -4,7 +4,7 @@ import CardInfo from "../components/CardInfo";
 import Visor360 from "../components/Visor360";
 import Tabs from "../components/Tabs";
 
-export default function Home() {
+const Home = () => {
     return (
         <Base>
             <MainHero title={'Salud y Trabajo'} subtitle={'EL EQUILIBRIO PERSONAL'}/>
@@ -44,3 +44,4 @@ export default function Home() {
         </Base>
     )
 }
+export default Home
