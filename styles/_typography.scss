@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../public/fonts/Lato/Lato-Bold.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../public/fonts/Lato/Lato-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../public/fonts/Roboto/Roboto-Bold.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../public/fonts/Roboto/Roboto-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+
+$headings: (
+        1: 72,
+        2: 48,
+        3: 32,
+        4: 28,
+        5: 20
+);
+
+@each $heading,
+$ize in $headings {
+  .heading--#{$heading} {
+    font-family: var(--font-primary);
+    font-size: #{$ize * .60}px;
+    font-weight: 400;
+    color: var(--neutral100);
+
+    @media (min-width: $small-viewport) {
+      font-size: #{$ize * .90}px;
+    }
+
+    @media (min-width: $medium-viewport) {
+      font-size: #{$ize * .95}px;
+    }
+
+    @media (min-width: $large-viewport) {
+      font-size: #{$ize}px;
+    }
+  }
+}
+
+$bodyText: 'x_large' 20,
+'large' 18,
+'medium' 16,
+'small' 14;
+
+@each $body,
+$ize in $bodyText {
+  .body--#{$body} {
+    font-family: var(--font-secondary);
+    font-size: #{$ize * .85}px;
+    font-weight: 400;
+
+    @media (min-width: $small-viewport) {
+      font-size: #{$ize * .90}px;
+    }
+
+    @media (min-width: $medium-viewport) {
+      font-size: #{$ize * .95}px;
+    }
+
+    @media (min-width: $medium-viewport) {
+      font-size: #{$ize}px;
+    }
+  }
+}
+
+
+$display: 1 72 700,
+2 48 700,
+3 20 700;
+
+@each $dis,
+$ize,
+$height in $display {
+  .display--#{$dis} {
+    font-family: var(--font-secondary);
+    font-size: #{$ize}px;
+    font-weight: $height;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--normal {
+    font-weight: 400;
+  }
+
+}

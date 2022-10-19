@@ -1,0 +1,18 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+
+
+  td {
+    text-align: left;
+    height: 48px;
+    vertical-align: middle;
+    padding-left: var(--spc-xxxs);
+  }
+
+  tbody > tr:nth-child(odd) {
+    background-color: #f2f2f2
+  }
+}

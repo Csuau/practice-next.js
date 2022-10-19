@@ -1,0 +1,98 @@
+.divider {
+  height: 65%;
+  border: .5px solid var(--neutral10);
+
+  &--large {
+    height: 0;
+    border-bottom: .5px solid var(--neutral10);
+    width: 100%;
+  }
+
+  &--primary {
+    border-color: var(--primary);
+  }
+
+  &--secondary {
+    border-color: var(--secondary);
+  }
+
+  &--tertiary {
+    border-color: var(--tertiary);
+  }
+}
+
+@each $size,
+$spacer in $spacers {
+  .p-#{$size} {
+    padding: $spacer;
+  }
+
+  .px-#{$size} {
+    padding-left: $spacer;
+    padding-right: $spacer;
+  }
+
+  .py-#{$size} {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+
+  .pl-#{$size} {
+    padding-left: $spacer;
+  }
+
+  .pr-#{$size} {
+    padding-right: $spacer;
+  }
+
+  .pt-#{$size} {
+    padding-top: $spacer;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: $spacer;
+  }
+
+  .m-#{$size} {
+    margin: $spacer;
+  }
+
+  .mx-#{$size} {
+    margin-left: $spacer;
+    margin-right: $spacer;
+  }
+
+  .my-#{$size} {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+
+  .ml-#{$size} {
+    margin-left: $spacer;
+  }
+
+  .mr-#{$size} {
+    margin-right: $spacer;
+  }
+
+  .mt-#{$size} {
+    margin-top: $spacer;
+  }
+
+  .mb-#{$size} {
+    margin-bottom: $spacer;
+  }
+
+  .gap-#{$size} {
+    gap: $spacer;
+  }
+}
+
+
+
+
+.w {
+  &-100 {
+    width: 100%;
+  }
+}

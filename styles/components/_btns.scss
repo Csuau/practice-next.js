@@ -1,0 +1,101 @@
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #212529;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: var(--spc-xxxs) var(--spc-xs);
+  text-align: center;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+
+  @each $colorName, $color in $colors {
+    &--#{$colorName} {
+      background-color: $color;
+      border-color: $color;
+      color: var(--neutral20);
+
+      &:hover {
+        background-color: var(--neutral20);
+        color: $color
+      }
+    }
+  }
+
+  @each $colorName, $color in $colors {
+    &--#{$colorName}_outline {
+      background-color: var(--neutral20);
+      border-color: $color;
+      color: $color;
+
+      &:hover {
+        background-color: $color;
+        color: var(--neutral20);
+      }
+    }
+  }
+
+  @each $colorName, $color in $colors {
+    &--#{$colorName}_link {
+      display: block;
+      text-align: left;
+      background-color: transparent;
+      color: $color;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+
+      &:hover:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        height: 2.5px;
+        width: 30%;
+        background-color: $color;
+      }
+    }
+  }
+
+  $buttons: 'large' 18,
+  'normal' 16,
+  'small' 14;
+
+  @each $button, $ize in $buttons {
+    &--#{$button} {
+      font-family: var(--font-secondary);
+      font-size: #{$ize}px;
+      font-weight: 400;
+      padding: var(--spc-xxxs) var(--spc-s);
+    }
+  }
+
+  &--group {
+
+    > .btn {
+      padding: 4px var(--spc-xs);
+    }
+
+    > .btn:not(:last-child) {
+      border-right: none;
+    }
+
+    > :first-child {
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+
+    > :last-child {
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+  }
+}

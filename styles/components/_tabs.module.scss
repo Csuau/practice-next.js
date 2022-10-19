@@ -1,0 +1,31 @@
+@import './../breakPoints';
+
+.tab {
+  justify-content: center;
+  align-items: center;
+  background: var(--neutral20);
+  border: none;
+
+
+  &.active {
+    background: var(--secondary);
+
+    color: var(--neutral20)
+  }
+}
+
+.panel {
+  display: none;
+  background-color: var(--neutral10);
+
+  &--content {
+    @media(max-width: $small-viewport) {
+      display: block;
+      margin-bottom: var(--spc-xs);
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+}
