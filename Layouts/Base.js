@@ -8,7 +8,9 @@ import Footer from "../components/Footer";
 import FormContact from "../components/FormContact";
 import ContactList from "../components/ContactList";
 import Table from "../components/Table";
+import BasicContent from "../components/BasicContent";
 
+import {fakeText, fakeTitle} from "../data/fakeText"
 
 const Tabs = React.lazy(() => import(/* webpackChunkName: "component---src-Tabs-js" */ '../components/Tabs'))
 const Visor360 = React.lazy(() => import(/* webpackChunkName: "component---src-Visor360-js" */ '../components/Visor360'))
@@ -31,6 +33,7 @@ const body = [
         text: 'Comprar', href: '#', extraClass: 'btn--secondary_link'
     }]
 ]
+
 
 const Base = ({PageMetasI18n = []}) => {
     return (
@@ -99,6 +102,7 @@ const Base = ({PageMetasI18n = []}) => {
                         <Table body={body} head={head}/>
                     </div>
                 </section>
+                <BasicContent title={fakeTitle} text={fakeText}/>
 
             </main>
 
