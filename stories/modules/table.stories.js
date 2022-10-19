@@ -8,9 +8,5 @@ export default {
     component: Table,
 }
 export const Default = () => (
-    <section className=" py-xxl">
-        <div className="container py-xxl ox-auto">
-            <Table head={fakeHead} body={fakeBody}/>
-        </div>
-    </section>
+    <Table head={fakeHead} body={fakeBody}/>
 )

@@ -17,14 +17,14 @@ const routes = [
         label: 'Formación'
     },
     {
-        path: '#',
+        path: '/servicios',
         label: 'Servicios'
     },
     {
         path: '/contacto',
         label: 'Contactar'
     },
- 
+
 ]
 
 
