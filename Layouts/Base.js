@@ -30,11 +30,9 @@ const Base = ({PageMetasI18n, children}) => {
 
 
 
-                <section className=" py-xxl">
-                    <div className="container py-xxl ox-auto">
-                        <Table head={fakeHead} body={fakeBody}/>
-                    </div>
-                </section>
+
+
+
                 */}
 
             </main>
