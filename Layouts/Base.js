@@ -27,17 +27,15 @@ const Base = ({PageMetasI18n, children}) => {
 
 
                 <FormContact/>
-                <section className=" py-xxl">
-                    <div className="container py-xxl ">
-                        <ContactList/>
-                    </div>
-                </section>
+
+
+
                 <section className=" py-xxl">
                     <div className="container py-xxl ox-auto">
                         <Table head={fakeHead} body={fakeBody}/>
                     </div>
                 </section>
-                <BasicContent title={fakeTitle} text={fakeText}/>*/}
+                */}
 
             </main>
 
