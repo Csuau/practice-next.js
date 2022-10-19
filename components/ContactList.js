@@ -1,6 +1,7 @@
 const offices = [
 
     {
+        id: 0,
         office: 'Oficina Central',
         title: 'Centro médico Palma',
         address: 'Avda. Aaaa Aaaa,20,bajos',
@@ -11,6 +12,7 @@ const offices = [
         email: 'palma@centromedico.com'
     },
     {
+        id: 1,
         office: 'Delegación Manacor',
         title: 'Centro médico Manacor',
         address: 'C/Aaaaa aa AAaaaaaaa,2,bajos',
@@ -20,6 +22,7 @@ const offices = [
         email: 'manacor@centromedico.com'
     },
     {
+        id: 2,
         office: 'Delegación Ibiza',
         title: 'Centro médico Ibiza',
         address: 'C/Aaaaaa aa Aaaaaaaa ,6 (Ed.Aaaa)',
@@ -30,6 +33,7 @@ const offices = [
 
     },
     {
+        id: 3,
         office: 'Delegación Menorca',
         title: 'Centro médico Menorca',
         address: 'C/Aaaaaaaaa,78',
